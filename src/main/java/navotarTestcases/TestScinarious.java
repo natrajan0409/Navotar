@@ -69,7 +69,7 @@ WebElement PickDate = driver.findElement(By.xpath("/html/body/form/div/div/div/d
 if(PickDate.isEnabled())
 {
 PickDate.clear();
-PickDate.sendKeys("01-January-2020");
+PickDate.sendKeys("05-February-2020");
 System.out.println("Pick Date is enabled ");
 }
 else
@@ -88,7 +88,7 @@ WebElement DropDate = driver.findElement(By.xpath("/html/body/form/div/div/div/d
 if(DropDate.isEnabled())
 {
 DropDate.clear();
-DropDate.sendKeys(" 03-January-2020");
+DropDate.sendKeys(" 28-February-2020");
 System.out.println("DropDate is enabled ");
 }
     
@@ -99,7 +99,7 @@ else
 //DropOff Time
 
 Select DropTime = new Select(driver.findElement(By.xpath("/html/body/form/div/div/div/div/div/div[3]/div[2]/select")));
-DropTime.selectByValue("25");
+DropTime.selectByValue("30");
 
 
 
@@ -199,7 +199,7 @@ System.out.println("Dropdown is Enabled");
     	 if(PickDate.isEnabled())
     	 {
     	 PickDate.clear();
-    	 PickDate.sendKeys("01-January-2020");
+    	 PickDate.sendKeys("05-February-2020");
     	 System.out.println("Pick Date is enabled ");
     	 }
     	 else
@@ -210,7 +210,7 @@ System.out.println("Dropdown is Enabled");
 
     	 //PickUp Time
     	 Select PickupTime = new Select(driver.findElement(By.xpath("/html/body/form/div/div/div/div/div/div[2]/div[2]/select")));
-    	 PickupTime.selectByValue("42");
+    	 PickupTime.selectByValue("23");
            
     	
     	 //Drop OFf Date
@@ -219,7 +219,7 @@ System.out.println("Dropdown is Enabled");
 if(DropDate.isEnabled())
 {
 DropDate.clear();
-DropDate.sendKeys(" 03-January-2020");
+DropDate.sendKeys("28-February-2020");
 System.out.println("DropDate is enabled ");
 }
     
@@ -232,7 +232,7 @@ else
     	 //DropOff Time
 
     	 Select DropTime = new Select(driver.findElement(By.xpath("/html/body/form/div/div/div/div/div/div[3]/div[2]/select")));
-    	 DropTime.selectByValue("42");
+    	 DropTime.selectByValue("45");
    
     	 //PickUp Location Selection
     	 Select PickLocation = new Select(driver.findElement(By.xpath("/html/body/form/div/div/div/div/div/div[4]/div[1]/select")));
