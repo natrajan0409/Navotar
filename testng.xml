@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Navotar">
@@ -8,3 +9,15 @@
   </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Navotar">
+  <test thread-count="5" name="Test">
+  <classes>
+  <class name ="navotarTestcases.TestScinarious">
+  </class>
+  </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+>>>>>>> 810f8146d0bf2998a3c73e5ca3112060770a307a

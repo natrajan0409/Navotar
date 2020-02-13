@@ -174,7 +174,8 @@ WebElement element =driver.findElement(By.xpath("/html/body/div[1]/div[2]/div[2]
 if( element.isEnabled())
 {
 	element.click();
-}else
+}
+else
 {	
 System.out.println("Next button disable");
 }
