@@ -2,7 +2,6 @@ package navotarTestcases;
 
 
 
-
 public class RUN  {
 	
 	public static void main(String[] args) throws InterruptedException {
@@ -16,6 +15,8 @@ public class RUN  {
 		TestScinarious.URL();
 		Thread.sleep(5000);
 		TestScinarious.TestScenar2();
+		
+		
 	         
 	}
     

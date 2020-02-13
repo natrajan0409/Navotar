@@ -1,5 +1,9 @@
 package navotarTestcases;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -7,13 +11,21 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
 public class TestScinarious {
 
 	static WebDriver  driver;
 	
- 	
-    
+ 	public static void  date () {
+ 		DateFormat dateFormat = new SimpleDateFormat("MM/dd/yyyy ");
+ 		 Date date = new Date();
+ 		String date1= dateFormat.format(date);
+ 	}
+	
+	@BeforeMethod
 	public static void   URL() throws InterruptedException {
 			
 		String path = System.getProperty("user.dir");   // return project folder path
@@ -43,7 +55,7 @@ public class TestScinarious {
 	    }
 	
 		
-	
+	@Test(priority=1)
     public static void  TestScenar1() throws InterruptedException {
     	System.out.println("TestScenar1");
     	Thread.sleep(5000);
@@ -171,7 +183,7 @@ Thread.sleep(5000);
 }
     
  
-    		
+	@Test(priority=2)
     public static void  TestScenar2() throws InterruptedException {
     	
     	System.out.println("TestScenar2");	
